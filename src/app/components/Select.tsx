@@ -17,7 +17,6 @@ type SelectProps = {
 const Select = ({ label, value, onChange, options }: SelectProps) => {
 
   const handleChange = (event: SelectChangeEvent) => {
-    console.log(event.target.value);
     onChange(event.target.value as string);
   };
 
